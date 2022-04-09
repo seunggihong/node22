@@ -26,6 +26,7 @@ http
           return res.end(data);
         } catch (err) {
           // 404 error
+          console.error(err);
         }
       } else if (req.method == "POST") {
         if (req.url === "/user") {
